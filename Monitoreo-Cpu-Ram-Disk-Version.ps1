@@ -1,5 +1,5 @@
 ﻿#Envio al correo
-    $User = "correossl@tsolperu.com"
+    $User = "correossl@ricard0vsa.com"
     $Password = ConvertTo-SecureString  -String "NeclzyZx" -AsPlainText -Force 
     $cred=New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $Password
 # Este script muestra el uso de cpu, ram, disco
@@ -57,5 +57,5 @@
     # Delimitar excel
     Import-Csv C:\temp\Datos.csv  -Delimiter ";" | Export-Csv   C:\temp\Datos_vps1.csv -NoTypeInformation | Format-Table 
     #Envio de reporte al correo
-    #Send-MailMessage -Body "Reporte monitoreo de performance del VPS 1" -From "operations@tsolperu.com" -To "monitoreosiges@tsolperu.com" -Subject "Reporte monitoreo de performance del VPS 1" -SmtpServer "mail.tsolperu.com" -Port '587' -Credential $cred -attachment "C:\temp\Datos_vps1.csv"
+    #Send-MailMessage -Body "Reporte monitoreo de performance del VPS 1" -From "operations@ricard0vsa.com" -To "monitoreo@ricard0vsa.com" -Subject "Reporte monitoreo de performance del VPS 1" -SmtpServer "mail.ricard0vsa.com" -Port '587' -Credential $cred -attachment "C:\temp\Datos_vps1.csv"
     # Read-Host "Press any key to continue............"
